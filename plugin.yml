@@ -1,0 +1,5 @@
+name: AntiBuild
+main: me.ultramlg1108.AntiBuild.Main
+version: 0.0.1
+commands:
+    

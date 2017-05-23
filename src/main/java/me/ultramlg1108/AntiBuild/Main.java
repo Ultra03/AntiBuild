@@ -34,7 +34,7 @@ public class Main extends JavaPlugin implements Listener {
 	public void antiDestroy(BlockDestroyEvent event) {
 		Player player = event.getPlayer();
 		
-		if(!player.hasPermission("antibuild.build")) {
+		if(!player.hasPermission("antibuild.destroy")) {
 			event.setCancelled(true);
 		}
 	}

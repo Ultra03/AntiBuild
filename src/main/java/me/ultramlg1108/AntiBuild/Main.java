@@ -4,7 +4,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
-import org.bukkit.event.block.BlockDestroyEvent;
+import org.bukkit.event.block.BlockDamageEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin implements Listener {
@@ -31,13 +31,11 @@ public class Main extends JavaPlugin implements Listener {
 	}
 	
 	@EventHandler
-	public void antiDestroy(BlockDestroyEvent event) {
-		Player player = event.getPlayer();
-		
-		if(!player.hasPermission("antibuild.destroy")) {
-			event.setCancelled(true);
+	 public void onBlockDamage(BlockDamageEvent event) {
+                if (event.getDamageLevel()==BlockDamageLevel.BROKEN) {
+                    event.setCancelled(true);
 		}
-	}
+            }
 	
 	
 	

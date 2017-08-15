@@ -4,7 +4,7 @@
 
   <groupId>me.ultramlg1108</groupId>
   <artifactId>AntiBuild</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>AntiBuild</name>
@@ -18,7 +18,7 @@
   	<dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.11.2-R0.1-SNAPSHOT</version>
+            <version>1.12-R0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>

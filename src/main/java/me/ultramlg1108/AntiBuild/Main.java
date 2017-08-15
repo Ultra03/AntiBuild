@@ -30,6 +30,7 @@ public class Main extends JavaPlugin implements Listener {
 		}
 	}
 	
+	@EventHandler
 	public void antiBuild(BlockBreakEvent event) {
 		Player player = event.getPlayer();
 		
